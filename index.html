@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Select Datalist y option</title>
+</head>
+<body>
+    <form action="">
+        <!-- SIMPLE IMPUTS -->
+        <h2>Formulario de contacto</h2>
+        <div class="formInput">
+            <label for="nombre">Nombre Completo</label>
+            <input id="nombre" type="text" placeholder="Pitufino">
+        </div>
+        <div class="formInput">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="@mela.pe">
+        </div>
+        <!-- SELECT Y OPTION -->
+        <div class="formInput">
+            <label for="">Tipo de usuario
+                <select name="typeUser">
+                    <option value="user1">Seguidor</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+        <!-- DATALIST Y OPTION -->
+        <div class="formInput">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="typeUser">
+                    <option value="William">Ingeniero de sistemas</option>
+                    <option value="Amigo">Cuidalos, son pocos</option>
+                    <option value="Perro">Te envidio tu cariño</option>
+                </datalist>
+            </label>
+        </div>
+        <!-- TEXT AREA -->
+        <div class="formInput">
+            <label for="area">Mensaje</label>
+            <textarea id="area" rows="7" placeholder="Tus pensamientos XD"></textarea>
+        </div>
+        <!-- CHECKBOX -->
+        <div class="formInput">
+            <label for="check">Terminos y condicciones</label>
+            <input id="check" type="checkbox" class="checkbox">
+        </div>
+    </form>
+</body>
+</html>
